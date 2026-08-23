@@ -5,7 +5,9 @@
 # Discord
 Our Discord server can be found here:
 
-![Discord Banner 1](https://discordapp.com/api/guilds/[1266260887249879122]/widget.png?style=banner1)
+<a href="https://discord.gg/TbvgspdTaZ">
+  <img src="https://discord.com/api/guilds/1266260887249879122/widget.png?style=banner2" alt="Discord Banner" />
+</a>
 
 # Description
 Lineux Toolchanger consist of a suite of 3 parts:
