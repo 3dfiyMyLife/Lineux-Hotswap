@@ -12,7 +12,7 @@ Our Discord server can be found here:
 # Description
 Lineux Hotendchanger consist of a suite of 3 parts:
 1. Lineux - The hardware consisting of the Carriage, Toolhead and Dock
-2. Btc - The macros handling the toolchange
+2. Btc - The macros handling the toolchange (Credit to @JackBeam for BTC)
 3. Dockslide - Stowable dock to maximise print build
 
 All 3 parts can be used with other systems. Example, Lineux can be used with other hotendchanger plugin. Other hotendchanger hardware can use Btc macros. Etc...
