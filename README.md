@@ -1,3 +1,5 @@
+
+
 # Lineux-Hotswap
 ### Diy Hotendchanger for fdm 3d printers
 ![](https://github.com/3dfiyMyLife/Lineux-Hotswap/blob/main/Images/lineux_hotswap_voron_r2_full_printer.png)![](https://github.com/3dfiyMyLife/Lineux-Hotswap/blob/main/Images/lineux_hotswap_vzbot330_full_printer.png)
@@ -84,7 +86,9 @@ Mellow 3d https://3dmellow.com/<br/>
 ### [Ko-fi](https://ko-fi.com/lineux_toolchanger) ###
 
 # Videos
+https://github.com/user-attachments/assets/3e8e5f42-4552-4d9c-a9ab-b509341ac4d7
 
+https://github.com/user-attachments/assets/85e045ab-b232-4179-8a6f-3297ebb0ea23
 
 
 # Prints
