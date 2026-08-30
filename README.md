@@ -5,8 +5,7 @@
 # Discord
 Our Discord server can be found here:
 
-<a href="https://discord.gg/TbvgspdTaZ">
-  <img src="https://discord.com/api/guilds/1266260887249879122/widget.png?style=banner2" alt="Discord Banner" />
+[![Join our Discord server!](https://<https://discord.com/channels/1266260887249879122/1266282965281800222>?invite=<TbvgspdTaZ>)](http://discord.gg/<TbvgspdTaZ>)
 </a>
 
 # Description
