@@ -6,7 +6,7 @@ Bikin Toolchanger (BTC) is using pure macros. It uses snippets of codes from the
 You can use Tubby, Intai, Mellow Zero Precision, or any camera calibration or manual calibration. 
 
 # Macro Status
-Fully tested and working. Released. (to be consolidated)
+Fully tested and working. Released.
 
 # Instructions
 Instructions are [here](https://github.com/Bikin-Creative/Lineux-Toolchanger/blob/main/Manual/KLIPPER.md)
@@ -18,9 +18,9 @@ Instructions are [here](https://github.com/Bikin-Creative/Lineux-Toolchanger/blo
 4. btc_leds.cfg <- Leds macros, required
 5. dockslide.cfg <- Required if using dockslide
 6. bashed_macros.cfg <- For stress testing of toolchanger, required after set up
-7. btc_nudge.cfg <- Macros for nudge tool, required during nozzle offset calibration set up
+7. btc_tubby.cfg <- Macros for tubby tool, required during nozzle offset calibration set up
 8. btc_tubby_z.cfg <- Macros for Z calibration only if using camera for X and Y nozzle offset
-9. btc_extras <- Sample macros to use in start/end print and homing override
+9. btc_extras.cfg <- Sample macros to use in start/end print and homing override
 10. btc_spoolman.cfg <- Currently not in used
 
 # Video guide
