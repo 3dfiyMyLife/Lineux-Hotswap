@@ -18,7 +18,7 @@ Lineux Hotswap consist of a suite of 3 parts:
 
 All 3 parts can be used with other systems. Example, Lineux can be used with other hotendchanger plugin. Other hotendchanger hardware can use Btc macros. Etc...
 
-Lineux has evolved into a front mounted Hotendchanger with Dockslide as our primary configuration.
+Lineux is designed as a front mounted Hotendchanger with Dockslide as our primary configuration.
 If you intend to use a fixed dock configuration, pls do check or ask in discord if there are any mods or alternatives that may have already been released.
 
 (Design, hardwares and configuration may change. Do check with us on discord)
