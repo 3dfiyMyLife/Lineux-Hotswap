@@ -82,7 +82,8 @@ JLCCNC https://jlccnc.com/<br/>
 Biqu https://biqu.equipment/<br/>
 Mellow 3d https://3dmellow.com/<br/>
 
-# If you would like to support our project
+
+# If you would like to support our project, you can do so on our Kofi Page
 ### [Ko-fi](https://ko-fi.com/lineux_toolchanger) ###
 
 # Videos
