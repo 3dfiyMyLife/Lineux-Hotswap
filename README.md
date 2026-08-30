@@ -95,7 +95,7 @@ https://github.com/user-attachments/assets/85e045ab-b232-4179-8a6f-3297ebb0ea23
 
 Printed by 3dfiy My Life on vzbot330
 
-![](https://github.com/Bikin-Creative/Lineux-Toolchanger/blob/main/Images/clownfish.jpg)
+![](https://github.com/3dfiyMyLife/Lineux-Hotswap/blob/main/Images/3dfiy_dragon.jpg)
 
 
 # Printers
