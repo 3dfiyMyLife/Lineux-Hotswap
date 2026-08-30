@@ -7,7 +7,7 @@
 # Discord
 Our Discord server can be found here:
 
-<img src="https://discord.com/api/guilds/1266260887249879122/widget.png?style=banner2" alt="Discord Banner" />
+[![Discord Banner 2](https://discord.com/api/guilds/1266260887249879122/widget.png?style=banner2)](https://discord.gg/Xwqbjj4VjH)
 </a>
 
 # Description
