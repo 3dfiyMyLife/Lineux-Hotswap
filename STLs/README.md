@@ -1,4 +1,6 @@
 # Overview
+The PUG (Printed Umbilical Gland) is not included. You can get them here.
+https://www.printables.com/model/378567-pug-parametric-umbilical-gland
 
 # Printed Parts
 Ensure the printed parts are printed without any warping to ensure proper and perfectly aligned components during installation.
