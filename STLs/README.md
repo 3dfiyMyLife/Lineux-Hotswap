@@ -1,6 +1,9 @@
 # Overview
-The PUG (Printed Umbilical Gland) is not included. You can get them here.
-https://www.printables.com/model/378567-pug-parametric-umbilical-gland
+
+## Lineux Hotswap (Open Beta Release)
+All cads released are based on a Voron 2.4 and Vzbot. You might need to adapt the dock and carriage to yr own printers. You can also check usermods section for any other printers cad/stl that may have been contributed by the community if they are not available here. Pls also do check in discord for any mods/contributions by the community.
+
+Designs, mechanism and bom do get updated as we progress. Do take note. (It's a good practice to ask before committing to the build as design and hardwares may change)
 
 # Printed Parts
 Ensure the printed parts are printed without any warping to ensure proper and perfectly aligned components during installation.
@@ -10,22 +13,35 @@ It is recommended to do a test print on a small part for fitting, material shrin
 Recommended slicer settings are as follows (Props to Voron team):
 ```
 Layer height: 0.2mm
-Extrusion width: 0.4mm, forced
+Extrusion width: 0.4mm
 Infill pecentage: 40%
 Infill type: Adaptive Cubic, grid, gyroid, honeycomb, triangle, or cubic
 Wall count: 4
 Solid top/bottom layers: 5
 ```
 
+# Carriage
+Refer to the printer carriage available or check under usermods section. Pls do check in discord as well. All carriages are designed to be front facing and utilising Dockslide.
 
+# Toolhead
+Currently, we offer a few hotends compability.
+Mellow V6 CHP
+Triangle CHC pro
+TZ V6 3.0
+E3D Revo Voron
+Phaetus Rapido
 
-# Printing Orientation
-Normal auto rotate will work for all parts for proper printing orientation. 
-These listed parts below however is recommended to be forced in the displayed printing orientation
+# Docks
+Docks are optimized to be used with a dockslide. Do check with our discord for other types which may have been contributed by the community.
 
-![](https://github.com/Bikin-Creative/Lineux-Toolchanger/blob/main/Images/print_orientation.jpg)
-![](https://github.com/Bikin-Creative/Lineux-Toolchanger/blob/main/Images/print_orientation1.jpg)
-![](https://github.com/Bikin-Creative/Lineux-Toolchanger/blob/main/Images/print_orientation2.jpg)
+# Dockslide
+Dockslide is a moving dock system to recover back any build volume loss encountered when having a fixed dock on the existing printer in which the frame wasn't extended in X or Y.
 
+# Requirement
+1. Carriage
+2. Tools (Quantity depends on how many you require or may fit on yr printer. Minimum of 2 toolheads recomended)
+3. Docks (1 dock per toolhead required)
+4. Dockslide (You will need a fixed dock mount if you are not using dockslide)
+5. Tubby / Intai (Required for tool nozzle offset calibration)
 
 Join our [Discord](https://discord.gg/Xwqbjj4VjH) for any questions u may have. Let's go...

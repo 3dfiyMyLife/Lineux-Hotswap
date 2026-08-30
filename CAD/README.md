@@ -1,6 +1,6 @@
 # Overview
 
-## Lineux Stealth (Latest Release)
+## Lineux Hotswap (Open Beta Release)
 All cads released are based on a Voron 2.4 and Vzbot. You might need to adapt the dock and carriage to yr own printers. You can also check usermods section for any other printers cad/stl that may have been contributed by the community if they are not available here. Pls also do check in discord for any mods/contributions by the community.
 
 Designs, mechanism and bom do get updated as we progress. Do take note. (It's a good practice to ask before committing to the build as design and hardwares may change)
@@ -13,7 +13,7 @@ It is recommended to do a test print on a small part for fitting, material shrin
 Recommended slicer settings are as follows (Props to Voron team):
 ```
 Layer height: 0.2mm
-Extrusion width: 0.4mm, forced
+Extrusion width: 0.4mm
 Infill pecentage: 40%
 Infill type: Adaptive Cubic, grid, gyroid, honeycomb, triangle, or cubic
 Wall count: 4
@@ -24,25 +24,24 @@ Solid top/bottom layers: 5
 Refer to the printer carriage available or check under usermods section. Pls do check in discord as well. All carriages are designed to be front facing and utilising Dockslide.
 
 # Toolhead
-Lineux R2T and EVA toolheads do not include onboard part-cooling fans. Instead, a single 5015 part-cooling fan mounted on the carriage is required.
-
-Anthead and Dragonburner toolheads have their own onboard part-cooling fans, so a 5015 fan on the carriage is not needed when using these toolheads.
-
-If you choose to have a mixture of toolheads in your setup, you should retain the 5015 carriage-mounted fan and use the multi-tool duct for part cooling.
+Currently, we offer a few hotends compability.
+Mellow V6 CHP
+Triangle CHC pro
+TZ V6 3.0
+E3D Revo Voron
+Phaetus Rapido
 
 # Docks
-We recommend using Dockslide, as it allows you to use a single optimized dock design for both VzBot and Voron carriages.
-
-If you are not using Dockslide, you will need to select the appropriate dock from the Fixed Dock files to match your specific carriage.
+Docks are optimized to be used with a dockslide. Do check with our discord for other types which may have been contributed by the community.
 
 # Dockslide
 Dockslide is a moving dock system to recover back any build volume loss encountered when having a fixed dock on the existing printer in which the frame wasn't extended in X or Y.
 
 # Requirement
 1. Carriage
-2. Toolheads (Quantity depends on how many you require or may fit on yr printer. Minimum of 2 toolheads recomended)
+2. Tools (Quantity depends on how many you require or may fit on yr printer. Minimum of 2 toolheads recomended)
 3. Docks (1 dock per toolhead required)
 4. Dockslide (You will need a fixed dock mount if you are not using dockslide)
-5. Tubby (Required for tool nozzle offset calibration)
+5. Tubby / Intai (Required for tool nozzle offset calibration)
 
 Join our [Discord](https://discord.gg/Xwqbjj4VjH) for any questions u may have. Let's go...
