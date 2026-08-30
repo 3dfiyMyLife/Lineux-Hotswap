@@ -5,7 +5,7 @@
 # Discord
 Our Discord server can be found here:
 
-[![Join our Discord server!](https://<https://discord.com/channels/1266260887249879122/1266282965281800222>?invite=<TbvgspdTaZ>)](http://discord.gg/<TbvgspdTaZ>)
+[![Join the Lineux Discord](./assets/discord-banner.png)](https://discord.gg/TbvgspdTaZ)
 </a>
 
 # Description
