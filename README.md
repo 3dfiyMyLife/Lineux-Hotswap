@@ -1,15 +1,15 @@
 # Lineux-Hotswap
 ### Diy Hotendchanger for fdm 3d printers
-![](https://github.com/Bikin-Creative/Lineux-Toolchanger/blob/main/Images/lineux_voron_350.png)![](https://github.com/Bikin-Creative/Lineux-Toolchanger/blob/main/Images/lineux_vzbot330.png)![](https://github.com/Bikin-Creative/Lineux-Toolchanger/blob/main/Images/lineux_sling.png)
+![](https://github.com/3dfiyMyLife/Lineux-Hotswap/blob/main/Images/lineux_hotswap_voron_r2_full_printer.png)![](https://github.com/3dfiyMyLife/Lineux-Hotswap/blob/main/Images/lineux_hotswap_vzbot330_full_printer.png)
 
 # Discord
 Our Discord server can be found here:
 
-[![Join the Lineux Discord](./assets/discord-banner.png)](https://discord.gg/TbvgspdTaZ)
+<img src="https://discord.com/api/guilds/1266260887249879122/widget.png?style=banner2" alt="Discord Banner" />
 </a>
 
 # Description
-Lineux Hotendchanger consist of a suite of 3 parts:
+Lineux Hotswap consist of a suite of 3 parts:
 1. Lineux - The hardware consisting of the Carriage, Toolhead and Dock
 2. Btc - The macros handling the toolchange (Credit to @JackBeam for BTC)
 3. Dockslide - Stowable dock to maximise print build
@@ -51,60 +51,49 @@ If you’re simply looking for a plug-and-play machine, there are other great op
 Aside from costs at BOM, you will need these items. These are not included in the BOM
 1. PSU. The power depends on the number of tools used. The hotend heater power also must be taken into account.
 2. Probe. You will only need 1 probe.
-3. Hotend. Every tool will need 1 hotend, 1 thermistor and 1 hotend fan.
-4. PDB. All hotends, thermistor and hotend fans need their own ports respectively. If your mcu doesnt have enough ports for them, you need to use an additional board or an expansion board.
+3. PDB. All hotends, thermistor and hotend fans need their own ports respectively. If your mcu doesnt have enough ports for them, you need to use an additional board or an expansion board.
 
 
 # BOM
 BOM is [here](https://github.com/3dfiyMyLife/Lineux-Hotswap/tree/main/BOM)
 
 # Current stage
-Lineux: Released
+Lineux Hotswap: Open Beta
 
 BTC: Released
 
 Dockslide: Released
 
-Dockslide project was kindly supported by ([Blurolls](https://www.blurolls3d.com) and [LDO Motors](https://ldomotors.com/))
-
 # Instructions
 Instructions/Guides are [here](https://github.com/3dfiyMyLife/Lineux-Hotswap/tree/main/Manuals)
+
+# A huge thanks to the companies who have been supporting us
+Blurolls https://blurolls3d.com/<br/>
+LDO Motors https://ldomotors.com/<br/>
+Polymaker https://polymaker.com/<br/>
+E3D https://e3d-online.com/<br/>
+RDBB rails https://a.aliexpress.com/_oB4RnLd<br/>
+Fysect https://www.fysetc.com/<br/>
+Trianglelab https://trianglelab.net/<br/>
+Cartographer 3d https://cartographer3d.com/<br/>
+JLCCNC https://jlccnc.com/<br/>
+Biqu https://biqu.equipment/<br/>
+Mellow 3d https://3dmellow.com/<br/>
 
 # If you would like to support our project
 ### [Ko-fi](https://ko-fi.com/lineux_toolchanger) ###
 
 # Videos
 
-https://github.com/user-attachments/assets/762defa3-31b9-4971-9426-da4857a4f154
 
-https://github.com/user-attachments/assets/436ea148-65da-4729-8020-6bcd89354991
-
-https://github.com/user-attachments/assets/d4576c4a-1339-4d5b-b265-4488fd4a67e5
 
 # Prints
-
-Printed by art on voron 2.4
-
-![](https://github.com/Bikin-Creative/Lineux-Toolchanger/blob/main/Images/capt_am_art.jpg)
 
 Printed by 3dfiy My Life on vzbot330
 
 ![](https://github.com/Bikin-Creative/Lineux-Toolchanger/blob/main/Images/clownfish.jpg)
 
-![](https://github.com/Bikin-Creative/Lineux-Toolchanger/blob/main/Images/fuzzy_bear.jpg)
-
-Printed by guy on ratrig vcore3
-
-![](https://github.com/Bikin-Creative/Lineux-Toolchanger/blob/main/Images/guy_print.jpg)
-
-![](https://github.com/Bikin-Creative/Lineux-Toolchanger/blob/main/Images/guy_print1.jpg)
-
-Printed by camtab on vzbot330
-
-![](https://github.com/Bikin-Creative/Lineux-Toolchanger/blob/main/Images/deadpool_camtab.jpg)
-
-![](https://github.com/Bikin-Creative/Lineux-Toolchanger/blob/main/Images/venom_camtab.jpg)
 
 # Printers
-This project was developed on a Vzbot 330 and Voron 2.4. Other printers would need slight modifications. We could add support for other printers when there are others who had modded successfully, or when
+This project was developed on a Vzbot 330 and Voron 2.4 and Voron Trident. Other printers would need slight modifications. We could add support for other printers when there are others who had modded successfully, or when
 we are able to get a hold of other printers to mod.
