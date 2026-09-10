@@ -98,6 +98,10 @@ Printed by 3dfiy My Life on vzbot330
 
 ![](https://github.com/3dfiyMyLife/Lineux-Hotswap/blob/main/Images/3dfiy_dragon.jpg)
 
+Printed by irrenhaus on voron trident r2
+
+![](https://github.com/3dfiyMyLife/Lineux-Hotswap/blob/main/Images/irrenhaus_octopus.jpg)
+
 
 # Printers
 This project was developed on a Vzbot 330 and Voron 2.4 and Voron Trident. Other printers would need slight modifications. We could add support for other printers when there are others who had modded successfully, or when
