@@ -3,27 +3,28 @@ Bikin Toolchanger (BTC) is using pure macros. It uses snippets of codes from the
 [Klicky Probe](https://github.com/jlas1/Klicky-Probe).
 
 # Nozzle Offset Calibration Tool
-You can use Tubby, Intai, Mellow Zero Precision, or any camera calibration or manual calibration. 
+You can use Tubby, Intai, Nudge, Mellow Zero Precision, or any camera calibration or manual calibration. 
 
 # Macro Status
 Fully tested and working. Released.
 
 # Instructions
-Instructions are [here](https://github.com/Bikin-Creative/Lineux-Toolchanger/blob/main/Manual/KLIPPER.md)
+Instructions are [here](https://github.com/3dfiyMyLife/Lineux-Toolchanger/blob/main/Manual/KLIPPER.md)
 
 # Files
 1. btc.cfg <- Main file, required
-2. btc_variables.cfg <- Variables, required
-3. tool_x.cfg <- Individual tool settings, required
-4. btc_leds.cfg <- Leds macros, required
-5. dockslide.cfg <- Required if using dockslide
-6. bashed_macros.cfg <- For stress testing of toolchanger, required after set up
-7. btc_tubby.cfg <- Macros for tubby tool, required during nozzle offset calibration set up
-8. btc_tubby_z.cfg <- Macros for Z calibration only if using camera for X and Y nozzle offset
-9. btc_extras.cfg <- Sample macros to use in start/end print and homing override
-10. btc_spoolman.cfg <- Currently not in used
+2. btc_carriage.cfg	<- Carriage file, required
+3. btc_variables.cfg <- Variables, required
+4. tool_x.cfg <- Individual tool settings, required
+5. btc_leds.cfg <- Leds macros, required
+6. dockslide.cfg <- Required if using dockslide
+7. bashed_macros.cfg <- For stress testing of hotendchanger, required after set up
+8. btc_tubby.cfg <- Macros for tubby tool, required during nozzle offset calibration set up
+9. btc_tubby_z.cfg <- Macros for Z calibration only if using camera for X and Y nozzle offset
+10. btc_extras.cfg <- Sample macros to use in start/end print and homing override
+11. btc_spoolman.cfg <- Required if using Spoolman
 
 # Video guide
 
-[![IMAGE ALT TEXT HERE](https://github.com/Bikin-Creative/Lineux-Toolchanger/blob/main/Images/btc_guide.png)](https://youtu.be/QYzVRNqW2J0?si=Q4HBHzA9LW7UP1U8)
+[![IMAGE ALT TEXT HERE](https://github.com/3dfiyMyLife/Lineux-Toolchanger/blob/main/Images/btc_guide.png)](https://youtu.be/aBgHKiLgzWA?si=D5ylQy5s1Cmdv41K)
 
