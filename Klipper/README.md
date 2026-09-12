@@ -26,5 +26,5 @@ Instructions are [here](https://github.com/3dfiyMyLife/Lineux-Toolchanger/blob/m
 
 # Video guide
 
-[![IMAGE ALT TEXT HERE](https://github.com/3dfiyMyLife/Lineux-Toolchanger/blob/main/Images/btc_guide.png)](https://youtu.be/aBgHKiLgzWA?si=D5ylQy5s1Cmdv41K)
+[![IMAGE ALT TEXT HERE](https://github.com/3dfiyMyLife/Lineux-Hotswap/blob/main/Images/btc_klipper_hotswap.png)](https://youtu.be/aBgHKiLgzWA?si=D5ylQy5s1Cmdv41K)
 
