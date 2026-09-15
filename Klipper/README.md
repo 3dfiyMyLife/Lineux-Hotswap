@@ -8,9 +8,6 @@ You can use Tubby, Intai, Nudge, Mellow Zero Precision, or any camera calibratio
 # Macro Status
 Fully tested and working. Released.
 
-# Instructions
-Instructions are [here](https://github.com/3dfiyMyLife/Lineux-Toolchanger/blob/main/Manual/KLIPPER.md)
-
 # Files
 1. btc.cfg <- Main file, required
 2. btc_carriage.cfg	<- Carriage file, required
