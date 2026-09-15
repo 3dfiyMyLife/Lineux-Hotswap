@@ -22,14 +22,16 @@ Solid top/bottom layers: 5
 
 # Carriage
 Refer to the printer carriage available or check under usermods section. Pls do check in discord as well. All carriages are designed to be front facing and utilising Dockslide.
+If you are running Lineux Hotswap on a Voron 2.4 r2, you will need to use the Z chain transpose as well eg, https://www.printables.com/model/279739-voron-can-bus-z-chain-move
+There are a few versions which you can search and use.
 
 # Toolhead
-Currently, we offer a few hotends compability.
-Mellow V6 CHP
-Triangle CHC pro
-TZ V6 3.0
-E3D Revo Voron
-Phaetus Rapido
+Currently, we offer a few hotends compability. Do check on discord for other hotends compability which may have been made by the community.<br/>
+Mellow V6 CHP<br/>
+Triangle CHC pro<br/>
+TZ V6 3.0<br/>
+E3D Revo Voron<br/>
+Phaetus Rapido<br/>
 
 # Docks
 Docks are optimized to be used with a dockslide. Do check with our discord for other types which may have been contributed by the community.

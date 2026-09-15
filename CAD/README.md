@@ -22,6 +22,8 @@ Solid top/bottom layers: 5
 
 # Carriage
 Refer to the printer carriage available or check under usermods section. Pls do check in discord as well. All carriages are designed to be front facing and utilising Dockslide.
+If you are running Lineux Hotswap on a Voron 2.4 r2, you will need to use the Z chain transpose as well eg, https://www.printables.com/model/279739-voron-can-bus-z-chain-move
+There are a few versions which you can search and use.
 
 # Toolhead
 Currently, we offer a few hotends compability. Do check on discord for other hotends compability which may have been made by the community.<br/>
