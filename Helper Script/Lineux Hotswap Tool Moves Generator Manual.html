@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lineux Hotswap Tool Moves Generator (Manual Version)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+        }
+        h1 {
+            background: linear-gradient(to right, #60a5fa, #22d3ee);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        textarea {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            background-color: #0b1120;
+            color: #c3d0f0;
+        }
+    </style>
+</head>
+<body class="antialiased flex items-center justify-center p-6">
+
+    <div class="max-w-3xl w-full glass-card rounded-3xl p-8 shadow-2xl">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold flex items-center justify-center gap-3">
+                <i class="fa-solid fa-cube"></i>
+                Lineux Hotswap Tool Moves Generator
+				(Manual Version)
+            </h1>
+            <p class="text-slate-400 mt-2 text-sm">Enter X and Y positions to generate your tool.cfg block.</p>
+        </div>
+
+        <!-- Input Variables -->
+        <div class="space-y-4 mb-6">
+            <div>
+                <label class="block text-sm font-medium mb-2 text-slate-300">Dock Location X (current_x)</label>
+                <input type="number" step="0.01" id="dockX" placeholder="e.g. 10.0" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:border-cyan-400 focus:outline-none transition">
+            </div>
+            <div>
+                <label class="block text-sm font-medium mb-2 text-slate-300">Dock Location Y (current_y)</label>
+                <input type="number" step="0.01" id="dockY" placeholder="e.g. 10.0" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:border-cyan-400 focus:outline-none transition">
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+            <button onclick="generateFrontDock()" class="bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white font-semibold py-4 rounded-xl flex items-center justify-center gap-2 transition shadow-lg">
+                <i class="fa-solid fa-arrow-down"></i> Generate Front Tool Moves
+            </button>
+            <button onclick="generateRearDock()" class="bg-gradient-to-r from-violet-600 to-cyan-500 hover:from-violet-500 hover:to-cyan-400 text-white font-semibold py-4 rounded-xl flex items-center justify-center gap-2 transition shadow-lg">
+                <i class="fa-solid fa-arrow-up"></i> Generate Rear Tool Moves
+            </button>
+        </div>
+
+        <!-- Output Result Section -->
+        <div>
+            <div class="flex justify-between items-center mb-2">
+                <label class="text-sm font-semibold text-slate-300">Generated Configuration Block</label>
+                <button onclick="copyOutput()" class="text-xs text-cyan-400 hover:underline">
+                    <i class="fa-solid fa-copy mr-1"></i> Copy Code
+                </button>
+            </div>
+            <textarea id="outputResult" rows="18" readonly class="w-full rounded-xl p-4 border border-slate-700 text-xs focus:outline-none resize-none whitespace-pre" placeholder="Generated code block will appear here..."></textarea>
+        </div>
+    </div>
+
+    <script>
+        function generateFrontDock() {
+            const current_x = parseFloat(document.getElementById('dockX').value);
+            const current_y = parseFloat(document.getElementById('dockY').value);
+
+            if (isNaN(current_x) || isNaN(current_y)) {
+                alert('Please enter valid numbers for both X and Y positions!');
+                return;
+            }
+
+            const x_offset = 3.0;
+            const y_start = 100.0;
+            const y_mid = 13.0;
+
+            const pickup_approach_x = current_x;
+            const pickup_approach_y = y_start;
+            const pickup_move1 = current_y + y_mid;
+            const pickup_move2 = current_x - x_offset;
+            const pickup_move3 = current_y;
+            const pickup_move4 = current_x;
+            const pickup_move5 = y_start;
+
+            const dropoff_approach_x = current_x;
+            const dropoff_approach_y = y_start;
+            const dropoff_move1 = current_y;
+            const dropoff_move2 = current_x - x_offset;
+            const dropoff_move3 = current_y + y_mid;
+            const dropoff_move4 = current_x;
+            const dropoff_move5 = y_start;
+
+            const result = `========== COPY THIS BLOCK TO THE RESPECTIVE TOOL.CFG ==========
+variable_pickup_approachlocation: [${pickup_approach_x.toFixed(2)},${pickup_approach_y.toFixed(2)},-128,700]
+variable_pickup_moves: ["DOCKSLIDE_DEPLOY",
+						"-128,${pickup_move1.toFixed(2)},-128,700",
+						"${pickup_move2.toFixed(2)},-128,-128,200",
+						"-128,${pickup_move3.toFixed(2)},-128,200",
+					    "${pickup_move4.toFixed(2)},-128,-128,200",
+						"-128,${pickup_move5.toFixed(2)},-128,700",
+						"DOCKSLIDE_PARK"]
+
+variable_dropoff_approachlocation: [${dropoff_approach_x.toFixed(2)},${dropoff_approach_y.toFixed(2)},-128,700]
+variable_dropoff_moves: ["DOCKSLIDE_DEPLOY",
+						 "-128,${dropoff_move1.toFixed(2)},-128,700",
+						 "${dropoff_move2.toFixed(2)},-128,-128,200",
+						 "-128,${dropoff_move3.toFixed(2)},-128,100",
+						 "${dropoff_move4.toFixed(2)},-128,-128,200",
+						 "-128,${dropoff_move5.toFixed(2)},-128,700",
+						 "DOCKSLIDE_PARK"]
+==============================================================`;
+
+            document.getElementById('outputResult').value = result;
+        }
+
+        function generateRearDock() {
+            const current_x = parseFloat(document.getElementById('dockX').value);
+            const current_y = parseFloat(document.getElementById('dockY').value);
+
+            if (isNaN(current_x) || isNaN(current_y)) {
+                alert('Please enter valid numbers for both X and Y positions!');
+                return;
+            }
+
+            const x_offset = 3.0;
+            const y_start = 62.0;
+            const y_mid = 13.0;
+
+            const pickup_approach_x = current_x;
+            const pickup_approach_y = current_y - y_start;
+            const pickup_move1 = current_y - y_mid;
+            const pickup_move2 = current_x + x_offset;
+            const pickup_move3 = current_y;
+            const pickup_move4 = current_x;
+            const pickup_move5 = current_y - y_start;
+
+            const dropoff_approach_x = current_x;
+            const dropoff_approach_y = current_y - y_start;
+            const dropoff_move1 = current_y;
+            const dropoff_move2 = current_x + x_offset;
+            const dropoff_move3 = current_y - y_mid;
+            const dropoff_move4 = current_x;
+            const dropoff_move5 = current_y - y_start;
+
+            const result = `========== COPY THIS BLOCK TO THE RESPECTIVE TOOL.CFG ==========
+variable_pickup_approachlocation: [${pickup_approach_x.toFixed(2)},${pickup_approach_y.toFixed(2)},-128,700]
+variable_pickup_moves: ["DOCKSLIDE_DEPLOY",
+						"-128,${pickup_move1.toFixed(2)},-128,700",
+						"${pickup_move2.toFixed(2)},-128,-128,200",
+						"-128,${pickup_move3.toFixed(2)},-128,200",
+						"${pickup_move4.toFixed(2)},-128,-128,200",
+						"-128,${pickup_move5.toFixed(2)},-128,700",
+						"DOCKSLIDE_PARK"]
+
+variable_dropoff_approachlocation: [${dropoff_approach_x.toFixed(2)},${dropoff_approach_y.toFixed(2)},-128,700]
+variable_dropoff_moves: ["DOCKSLIDE_DEPLOY",
+						 "-128,${dropoff_move1.toFixed(2)},-128,700",
+						 "${dropoff_move2.toFixed(2)},-128,-128,200",
+						 "-128,${dropoff_move3.toFixed(2)},-128,100",
+						 "${dropoff_move4.toFixed(2)},-128,-128,200",
+						 "-128,${dropoff_move5.toFixed(2)},-128,700",
+						 "DOCKSLIDE_PARK"]
+==============================================================`;
+
+            document.getElementById('outputResult').value = result;
+        }
+
+        function copyOutput() {
+            const output = document.getElementById('outputResult');
+            if (!output.value) {
+                alert('Nothing to copy yet!');
+                return;
+            }
+            output.select();
+            navigator.clipboard.writeText(output.value);
+            alert('Copied to clipboard!');
+        }
+    </script>
+</body>
+</html>
